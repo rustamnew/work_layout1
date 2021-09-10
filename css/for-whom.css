@@ -68,6 +68,22 @@
   transform: translateY(-50%)
 }
 
+
+.for-whom__content-main li p {
+  position: relative;
+}
+.for-whom__content-main li p:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background: url('../images/icons/colored/check-box.svg');
+  background-repeat: no-repeat no-repeat;
+
+  position: absolute;
+  left: -7%;
+}
+
 .for-whom__form {
   display: flex;
   justify-content: space-between;

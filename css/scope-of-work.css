@@ -52,3 +52,36 @@
   margin-right: 15px; 
 }
 
+.scope-of-work__item-content li p {
+  position: relative;
+  width: 100%;
+}
+
+.scope-of-work__item.top .scope-of-work__item-content li p:before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background-size: cover;
+  background: url('../images/icons/colored/checked-blue.svg');
+  background-repeat: no-repeat no-repeat;
+
+  position: absolute;
+  left: -7%;
+}
+.scope-of-work__item.bottom .scope-of-work__item-content li p:before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background-size: cover;
+  background: url('../images/icons/colored/checked-yellow.svg');
+  background-repeat: no-repeat no-repeat;
+
+  position: absolute;
+  left: -7%;
+}
+
+
+
+
+
+
