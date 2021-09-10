@@ -1,0 +1,39 @@
+.upload {
+  background-image: url('../images/upload/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  min-height: 820px;
+  position: relative;
+
+  color: #ffffff;
+}
+
+.upload__content {
+  background: rgba(31, 31, 31, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  padding-top: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload__content .section__title {
+  top: 20%;
+  margin-bottom: 100px;
+}
+
+.upload__button {
+  background: rgba(252, 179, 42, 0.75);
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,54 @@
+.scope-of-work {
+  padding: 170px 0;
+  background-image: url('../images/scope-of-work/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+
+ 
+}
+
+.scope-of-work__item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+}
+.scope-of-work__item-image {
+  
+}
+
+.scope-of-work__item:last-child {
+  margin-bottom: 0;
+}
+
+.scope-of-work__item.bottom {
+  flex-direction: row-reverse;
+}
+.scope-of-work__item.top .scope-of-work__item-content{
+  margin-left: 30px;
+}
+.scope-of-work__item.bottom .scope-of-work__item-content{
+  margin-right: 30px;
+}
+
+.scope-of-work__item-content {
+  flex: 1;
+}
+.scope-of-work__item-content h2{
+  margin-bottom: 50px;
+}
+.scope-of-work__item-content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.scope-of-work__item-content li {
+  width: 49%;
+  display: flex;
+  margin-bottom: 10px;
+}
+.scope-of-work__item-content img {
+  margin-right: 15px; 
+}
+

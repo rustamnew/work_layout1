@@ -1,0 +1,18 @@
+.button {
+  padding: 18px 30px;
+  width: fit-content;
+  min-width: 250px;
+  background-color: #F2F2F2;
+  color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button.blue {
+  background-color: #2690AD;
+}
+.button.yellow {
+  background-color: #FCB32A;
+  color: #1F1F1F;
+}

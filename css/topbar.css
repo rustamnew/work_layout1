@@ -1,0 +1,20 @@
+.topbar {
+  background-color: #2690AD;
+  padding: 14px;
+  color: #ffffff;
+}
+.topbar__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.topbar__item {
+  display: flex;
+  align-items: center;
+}
+.topbar__item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}

@@ -1,0 +1,27 @@
+input {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #F2F2F2;
+}
+input.submit {
+  cursor: pointer;
+}
+input.yellow {
+  background-color: #FCB32A;
+}
+.promo__form .input {
+  width: 90%;
+  margin-bottom: 30px;
+  
+}
+.promo__form .input:last-child {
+  margin-bottom: 0;
+}
+.promo__form .input.text {
+  
+  
+}
+
+.promo__form .input.submit {
+  background-color: #FCB32A;
+}

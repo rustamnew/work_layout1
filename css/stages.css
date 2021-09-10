@@ -1,0 +1,50 @@
+.stages__list {
+  display: flex;
+}
+
+
+
+.stages__item {
+display: flex;
+flex-direction: column;
+align-items: center; 
+flex: 1;
+position: relative;
+}
+
+.stages__item:not(:last-child) .stages__item-icon:after {
+  content: '';
+  position: absolute;
+  
+  right: -15%;
+
+  background-color: #E0E0E0;
+
+ 
+  height: 2px;
+  width: 70px;
+
+  pointer-events: none;
+  content: '';
+}
+
+
+.stages__item-icon {
+  border-radius: 50%;
+  border: 5px solid #E0E0E0;
+  width: 128px;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.stages__item p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 19px;
+  width: 90%;
+}
