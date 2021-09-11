@@ -69,10 +69,10 @@
 }
 
 
-.for-whom__content-main li p {
+.for-whom__content-main li {
   position: relative;
 }
-.for-whom__content-main li p:before {
+.for-whom__content-main li:before {
   content: '';
   width: 24px;
   height: 24px;
@@ -82,14 +82,16 @@
 
   position: absolute;
   left: -7%;
+  top: 50%;
+  transform: translateY(-50%)
 }
 
 .for-whom__form {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .for-whom__form input{
-  width: 48%;
+  margin-right: 30px;
 }
 
 @media (max-width: 1024px) {

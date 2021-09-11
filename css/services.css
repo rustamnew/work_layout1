@@ -47,17 +47,7 @@
 .slider {
   width: 90%;
 }
-.slider__items {
-  width: 100%;
-}
-.slider__wrapper {
-  display: flex;
-  justify-content: center;
-}
 
-@media (max-width: 1024px) {
-  .slider__item {
-      flex: 0 0 50%;
-      max-width: 50%;
-  }
+.slider__item {
+  padding: 20px;
 }

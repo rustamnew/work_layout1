@@ -12,7 +12,13 @@
 .button.blue {
   background-color: #2690AD;
 }
+.button.blue:hover {
+  background-color: #1b7087;
+}
 .button.yellow {
   background-color: #FCB32A;
   color: #1F1F1F;
+}
+.button.yellow:hover {
+  background-color: #b5811f;
 }

@@ -51,3 +51,15 @@
 .banner__promo p {
   margin-bottom: 40px;
 }
+
+.promo__form .input {
+  width: 90%;
+  margin-bottom: 30px;
+}
+.promo__form .input:last-child {
+  margin-bottom: 0;
+}
+.promo__form .input.text {
+  
+}
+

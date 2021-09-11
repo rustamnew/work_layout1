@@ -12,21 +12,7 @@ flex: 1;
 position: relative;
 }
 
-.stages__item:not(:last-child) .stages__item-icon:after {
-  content: '';
-  position: absolute;
-  
-  right: -15%;
 
-  background-color: #E0E0E0;
-
- 
-  height: 2px;
-  width: 70px;
-
-  pointer-events: none;
-  content: '';
-}
 
 
 .stages__item-icon {
@@ -47,4 +33,25 @@ position: relative;
   font-weight: 500;
   font-size: 19px;
   width: 90%;
+}
+
+
+
+
+@media (min-width: 1024px) {
+  .stages__item:not(:last-child) .stages__item-icon:after {
+    content: '';
+    position: absolute;
+    
+    right: -15%;
+  
+    background-color: #E0E0E0;
+  
+   
+    height: 2px;
+    width: 70px;
+  
+    pointer-events: none;
+    content: '';
+  }
 }
