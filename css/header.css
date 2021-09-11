@@ -10,6 +10,12 @@
   font-size: 28px;
   font-weight: 500;
 }
+.header__col.mobile {
+  display: none
+}
+.header__col.mobile img {
+  width: 30px
+}
 
 @media (max-width: 768px) {
   .header {
@@ -23,8 +29,9 @@
   .header__col .button {
     display: none;
   }
-  
-  .header__col.mobile img{
-    width: 30px
+
+  .header__col.mobile {
+    display: block;
   }
+
 }
