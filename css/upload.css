@@ -2,7 +2,7 @@
   background-image: url('../images/upload/background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center left;
 
   min-height: 820px;
   position: relative;
@@ -17,7 +17,7 @@
   right: 0;
   bottom: 0;
   left: 50%;
-  padding-top: 12%;
+  padding: 12% 2%;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -4,8 +4,10 @@
 
 .advantages .container {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
+
+  position: relative;
 }
 
 .advantages__col {
@@ -48,3 +50,21 @@
   color: #717171;
 }
 
+@media (max-width: 1024px) {
+
+  .advantages .section__title {
+      margin-bottom: 36px;
+  }
+  .advantages__image {
+      width: 20%;
+      position: absolute;
+      top: 4%;
+      right: 50%;
+      transform: translateX(50%);
+  }
+  .advantages__col {
+      width: 42%;
+      margin-top: 300px;
+  }
+  
+}

@@ -6,6 +6,12 @@
     <title>ЭлектроЭкспресс</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--ChiefSlider-->
+    <link rel="stylesheet" href="./slider/chief-slider.css">
+    <script src="./slider/chief-slider.js"></script>
+
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
@@ -174,61 +180,91 @@
             </div>
 
             <div class="container">
-                <ul class="services__list">
-                    <li class="services__item">
-                        <div class="services__item-image">
-                            <img src="./images/services/1.png" alt="image">
-                        </div>
-                        <div class="services__item-info">
-                            <h3>Электрика под ключ в однокомнатной квартире новостройки</h3>
-                            <ul>
-                                <li>• демонтаж</li>
-                                <li>• штробление</li>
-                                <li>• прокладка кабеля</li>
-                                <li>• установка розеток и выключателей</li>
-                                <li>• сборка и монтаж щита</li>
-                            </ul>
-    
-                            <a href="#" class="button yellow">Рассчитать проект</a>
-                        </div>
-                    </li>
-
-                    <li class="services__item">
-                        <div class="services__item-image">
-                            <img src="./images/services/2.png" alt="image">
-                        </div>
-                        <div class="services__item-info">
-                            <h3>Электрика под ключ в однокомнатной квартире новостройки</h3>
-                            <ul>
-                                <li>• демонтаж</li>
-                                <li>• штробление</li>
-                                <li>• прокладка кабеля</li>
-                                <li>• установка розеток и выключателей</li>
-                                <li>• сборка и монтаж щита</li>
-                            </ul>
-    
-                            <a href="#" class="button yellow">Рассчитать проект</a>
-                        </div>
-                    </li>
-
-                    <li class="services__item">
-                        <div class="services__item-image">
-                            <img src="./images/services/3.png" alt="image">
-                        </div>
-                        <div class="services__item-info">
-                            <h3>Электрика под ключ в однокомнатной квартире новостройки</h3>
-                            <ul>
-                                <li>• демонтаж</li>
-                                <li>• штробление</li>
-                                <li>• прокладка кабеля</li>
-                                <li>• установка розеток и выключателей</li>
-                                <li>• сборка и монтаж щита</li>
-                            </ul>
-    
-                            <a href="#" class="button yellow">Рассчитать проект</a>
-                        </div>
-                    </li>
-                </ul>
+                <div class="services__slider slider">
+                    <div class="slider__wrapper">
+                        <a href="#" class="slider__control" data-slide="prev"></a>
+                        <ul class="slider__items">
+                            <li class=" slider__item">
+                                <div class="services__item">
+                                    <div class="services__item-image">
+                                        <img src="./images/services/1.png" alt="image">
+                                    </div>
+                                    <div class="services__item-info">
+                                        <h3>Электрика под ключ в однокомнатной квартире новостройки</h3>
+                                        <ul>
+                                            <li>• демонтаж</li>
+                                            <li>• штробление</li>
+                                            <li>• прокладка кабеля</li>
+                                            <li>• установка розеток и выключателей</li>
+                                            <li>• сборка и монтаж щита</li>
+                                        </ul>
+                
+                                        <a href="#" class="button yellow">Рассчитать проект</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" slider__item">
+                                <div class="services__item">
+                                    <div class="services__item-image">
+                                        <img src="./images/services/2.png" alt="image">
+                                    </div>
+                                    <div class="services__item-info">
+                                        <h3>Электрика под ключ в однокомнатной квартире новостройки</h3>
+                                        <ul>
+                                            <li>• демонтаж</li>
+                                            <li>• штробление</li>
+                                            <li>• прокладка кабеля</li>
+                                            <li>• установка розеток и выключателей</li>
+                                            <li>• сборка и монтаж щита</li>
+                                        </ul>
+                
+                                        <a href="#" class="button yellow">Рассчитать проект</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" slider__item">
+                                <div class="services__item">
+                                    <div class="services__item-image">
+                                        <img src="./images/services/3.png" alt="image">
+                                    </div>
+                                    <div class="services__item-info">
+                                        <h3>Электрика под ключ в однокомнатной квартире новостройки</h3>
+                                        <ul>
+                                            <li>• демонтаж</li>
+                                            <li>• штробление</li>
+                                            <li>• прокладка кабеля</li>
+                                            <li>• установка розеток и выключателей</li>
+                                            <li>• сборка и монтаж щита</li>
+                                        </ul>
+                
+                                        <a href="#" class="button yellow">Рассчитать проект</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" slider__item">
+                                <div class="services__item">
+                                    <div class="services__item-image">
+                                        <img src="./images/services/1.png" alt="image">
+                                    </div>
+                                    <div class="services__item-info">
+                                        <h3>Электрика под ключ в четырёхкомнатной квартире новостройки</h3>
+                                        <ul>
+                                            <li>• демонтаж</li>
+                                            <li>• штробление</li>
+                                            <li>• прокладка кабеля</li>
+                                            <li>• установка розеток и выключателей</li>
+                                            <li>• сборка и монтаж щита</li>
+                                        </ul>
+                
+                                        <a href="#" class="button yellow">Рассчитать проект</a>
+                                    </div>
+                                </div>
+                            </li>  
+                            
+                        </ul>
+                        <a href="#" class="slider__control" data-slide="next"></a>
+                    </div>
+                </div>
             </div>
         </section>
 

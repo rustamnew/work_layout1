@@ -2,15 +2,11 @@
   background-image: url('../images/services/background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center left;
 }
 
 .services .section__title {
   color: #ffffff;
-}
-
-.services__list {
-  display: flex;
 }
 
 .services__item {
@@ -24,6 +20,7 @@
 
 .services__item-image {
   clip-path: polygon(0 0, 100% 0, 100% 99%, 0 88%);
+  height: 50%;
 }
 .services__item-image img{
   width: 100%;
@@ -45,4 +42,22 @@
   color: #717171;
   margin-bottom: 20px;
   align-self: flex-start;
+}
+
+.slider {
+  width: 90%;
+}
+.slider__items {
+  width: 100%;
+}
+.slider__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .slider__item {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
 }

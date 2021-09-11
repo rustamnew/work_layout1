@@ -91,3 +91,12 @@
 .for-whom__form input{
   width: 48%;
 }
+
+@media (max-width: 1024px) {
+  .for-whom__form input {
+    width: unset;
+  }
+  .for-whom__form input:first-child {
+    margin-right: 10px;
+  }
+}

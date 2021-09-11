@@ -1,5 +1,6 @@
 .projects {
-
+  padding-right: 1%;
+  padding-left: 1%; 
 }
 
 .projects__list {
@@ -13,7 +14,6 @@
   z-index: 1;
   position: relative;
   height: 250px;
-  width: 350px;
   background-size: cover;
   display: flex;
   flex-direction: column;

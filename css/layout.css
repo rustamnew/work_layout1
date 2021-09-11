@@ -35,7 +35,8 @@ section {
 }
 
 .container {
-    width: 1110px;
+    width: 100%;
+    max-width: 1110px;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -55,5 +56,9 @@ section {
 }
 
 .section__title h2 {
+    text-align: center;
     margin-bottom: 16px;
+}
+.section__title p {
+    text-align: center;
 }
