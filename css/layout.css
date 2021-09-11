@@ -62,3 +62,9 @@ section {
 .section__title p {
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .section__title {
+        padding: 0 20px;
+    }
+}

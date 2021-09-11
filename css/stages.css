@@ -55,3 +55,20 @@ position: relative;
     content: '';
   }
 }
+
+@media (max-width: 768px) {
+  .stages__list {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  .stages__item {
+    flex-direction: row;
+  }
+  .stages__item p {
+    text-align: left;
+    flex: 1;
+  }
+  .stages__item-icon {
+    margin-right: 20px;
+  }
+}

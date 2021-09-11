@@ -1,5 +1,5 @@
 .advantages {
-
+  background-color: #fafafa;
 }
 
 .advantages .container {
@@ -67,4 +67,27 @@
       margin-top: 310px;
   }
   
+}
+
+@media (max-width: 768px) {
+  .advantages .section__title {
+    margin-bottom: 50px;
+  }
+  .advantages .container {
+    flex-direction: column;
+  }
+  .advantages__image {
+    display: none;
+  }
+  .advantages__col {
+    margin-top: 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .advantages__item {
+    margin-bottom: 24px;
+  }
+  .advantages__item-info {
+    flex: 5;
+  }
 }

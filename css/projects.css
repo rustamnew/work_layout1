@@ -15,6 +15,7 @@
   position: relative;
   height: 250px;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -35,4 +36,19 @@
   z-index: 2;
   font-weight: 500;
   font-size: 19px;
+}
+
+@media (max-width: 768px) {
+  .projects__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projects__item {
+    height: 170px;
+  }
+  .projects__item::after {
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.2) 31.2%, rgba(17, 17, 17, 0.9) 100%);
+  }
 }

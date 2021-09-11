@@ -10,3 +10,21 @@
   font-size: 28px;
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 18px 20px;
+  }
+
+  .header__phone {
+    display: none;
+  }
+
+  .header__col .button {
+    display: none;
+  }
+  
+  .header__col.mobile img{
+    width: 30px
+  }
+}

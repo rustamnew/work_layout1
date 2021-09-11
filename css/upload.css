@@ -37,3 +37,11 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .upload__content {
+    left: 0;
+    justify-content: space-evenly;  
+  }
+
+}

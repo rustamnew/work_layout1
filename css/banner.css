@@ -63,3 +63,22 @@
   
 }
 
+@media (max-width: 768px) {
+  .banner {
+    padding: 0
+  }
+  .banner .container {
+    flex-direction: column;
+  }
+  .banner__content {
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .banner__content h1 {
+    text-align: center;
+  }
+  .banner__promo {
+    border-radius: 0;
+    max-width: 100%;
+  }
+}
