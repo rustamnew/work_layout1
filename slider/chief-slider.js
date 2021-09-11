@@ -88,17 +88,22 @@ function ChiefSlider(selector, config) {
   }
   // create some constants
   var $itemList = this._$itemList;
-  
   var widthItem = $itemList[0].clientWidth;
   var widthWrapper = this._$wrapper.clientWidth;
-  var itemsInVisibleArea = Math.floor(widthWrapper / widthItem);
 
+  var itemsInVisibleArea 
+  if (window.innerWidth <= 1024) {
+    itemsInVisibleArea = Math.floor(widthWrapper / widthItem)
+  } else {
+    itemsInVisibleArea = Math.round(widthWrapper / widthItem);
+  }
+  
   // initial setting properties
   this._widthItem = widthItem;
   this._widthWrapper = widthWrapper;
   this._itemsInVisibleArea = itemsInVisibleArea;
 
-
+  
   this._transformStep = 100 / itemsInVisibleArea;
   // initial setting order and translate items
   for (var i = 0, length = $itemList.length; i < length; i++) {
