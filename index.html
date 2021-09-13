@@ -10,6 +10,29 @@
     <link rel="stylesheet" href="./slider/slick-theme.css">
     
     <link rel="stylesheet" href="./main.css">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(85142614, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/85142614" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+
+    <!-- Phone Mask-->
+    <script src="https://unpkg.com/imask"></script>
+    
 </head>
 <body>
     <div class="wrapper">
@@ -46,8 +69,8 @@
 
         <section class="header">
             <div class="container">
-                <div class="header__col">
-                    <a href="#">
+                <div class="header__col logo">
+                    <a href="index.html">
                         <img src="./images/logo.png" alt="logo">
                     </a>
                 </div>
@@ -57,10 +80,10 @@
                     </div>
                 </div>
                 <div class="header__col">
-                    <a href="#" class="button blue">Заказать звонок</a>
+                    <a href="#" class="button blue summon-form-button">Заказать звонок</a>
                 </div>
                 <div class="header__col mobile">
-                    <div class="header__mobile-menu">
+                    <div class="header__mobile-menu__button" id="mobile-menu-open">
                         <a href="#">
                             <img src="./images/icons/black-outline/menu.svg" alt="icon">
                         </a>
@@ -79,7 +102,7 @@
                         <li>• соблюдаем ПУЭ и СНиП</li>
                         <li>• без посредников</li>
                     </ul>
-                    <a href="#" class="button blue">Заказать звонок</a>
+                    <a href="#" class="button blue summon-form-button">Заказать звонок</a>
                 </div>
                 <div class="banner__promo">
                     <h2><font color="#FCB32A" >Акция</font> до конца сентября!</h2>
@@ -94,6 +117,7 @@
         </section>
 
         <section class="advantages">
+            <a name="advantages"></a>
             <div class="section__title">
                 <div class="section__title-icon">
                     <img src="./images/icons/colored/Vector.svg" alt="icon">
@@ -174,6 +198,7 @@
         </section>
 
         <section class="services">
+            <a name="services"></a>
             <div class="section__title">
                 <div class="section__title-icon">
                     <img src="./images/icons/colored/Vector.svg" alt="icon">
@@ -267,6 +292,7 @@
         </section>
 
         <section class="for-whom">
+            <a name="for-whom"></a>
             <div class="container">
                 <div class="for-whom__content">
                     <div class="for-whom__content-image">
@@ -298,16 +324,17 @@
                                 <p>Строительство дома, хочется все сделать под свои нужды</p>
                             </li>
                         </ul>
-                        <form action="#" class="for-whom__form">
-                            <input type="text" class="input text" placeholder="Ваше имя" required>
-                            <input type="submit" class="input submit yellow" value="Оставить заявку в WhatsApp">
-                        </form>
+                        <div class="for-whom__form">
+                            <input type="text" class="input text" id="for-whom__form-input" placeholder="Ваше имя" required>
+                            <input type="submit" class="input submit yellow" id="for-whom__form-submit" value="Оставить заявку в WhatsApp">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="projects">
+            <a name="projects"></a>
             <div class="section__title">
                 <div class="section__title-icon">
                     <img src="./images/icons/colored/Vector.svg" alt="icon">
@@ -344,11 +371,12 @@
                     </li>
                 </ul>
 
-                <a href="#" class="button yellow">Рассчитать мой объект</a>
+                <a href="#" class="button yellow summon-form-button">Рассчитать мой объект</a>
             </div>
         </section>
 
         <section class="upload">
+            <a name="upload"></a>
             <div class="upload__content">
                 <div class="section__title">
                     <div class="section__title-icon">
@@ -365,6 +393,7 @@
         </section>
 
         <section class="stages">
+            <a name="stages"></a>
             <div class="section__title">
                 <div class="section__title-icon">
                     <img src="./images/icons/colored/Vector.svg" alt="icon">
@@ -414,6 +443,7 @@
         </section>
 
         <section class="scope-of-work">
+            <a name="scope-of-work"></a>
             <div class="container">
                 
                 <div class="scope-of-work__item top">
@@ -508,6 +538,33 @@
                 
             </div>
         </section>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#" id="mobile-menu-close">X</a>
+
+        <a href="#advantages" class="mobile-menu__item">Преимущества</a>
+    
+        <a href="#services" class="mobile-menu__item">Услуги</a>
+    
+        <a href="#for-whom" class="mobile-menu__item">Оставить заявку</a>
+    
+        <a href="#projects" class="mobile-menu__item">Проекты</a>
+    
+        <a href="#upload" class="mobile-menu__item">Прислать проект</a>
+    
+        <a href="#stages" class="mobile-menu__item">Этапы работ</a>
+    
+        <a href="#scope-of-work" class="mobile-menu__item">Информация</a>
+    </div>
+
+    <div class="summoned-form" id="summoned-form">
+        <form action="form.php" class="summoned-form__form" method="POST">
+            <a href="#" id="summoned-form-close">X</a>
+            <input type="text" name="name" class="input text" placeholder="Ваше имя" required>
+            <input type="text" name="phone" class="input text input-phone" placeholder="Номер телефона" required>
+            <input type="submit" class="input submit yellow" value="Отправить">
+        </form>
     </div>
 
     <script src="./slider/jquery-3.6.0.min.js"></script>

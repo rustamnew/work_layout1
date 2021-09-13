@@ -22,6 +22,10 @@
     padding: 18px 20px;
   }
 
+  .header__col.logo {
+    width: 80%;
+  }
+
   .header__phone {
     display: none;
   }

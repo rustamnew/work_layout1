@@ -17,3 +17,34 @@ input.yellow {
 input.yellow:hover {
   background-color: #ffa700;
 }
+
+.button {
+  padding: 18px 30px;
+  width: fit-content;
+  min-width: 250px;
+  background-color: #F2F2F2;
+  color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button.blue {
+  background-color: #2690AD;
+}
+.button.blue:hover {
+  background-color: #1b7087;
+}
+.button.yellow {
+  background-color: #FCB32A;
+  color: #1F1F1F;
+}
+.button.yellow:hover {
+  background-color: #b5811f;
+}
+
+@media (max-width: 320px) {
+  .button {
+    min-width: unset;
+  }
+}
