@@ -22,3 +22,9 @@
 .button.yellow:hover {
   background-color: #b5811f;
 }
+
+@media (max-width: 320px) {
+  .button {
+    min-width: unset;
+  }
+}

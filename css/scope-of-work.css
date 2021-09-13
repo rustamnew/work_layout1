@@ -124,3 +124,13 @@
     left: -12%;
   }
 }
+
+@media (max-width: 380px) {
+  .scope-of-work__item-content ul {
+    padding: 0 1%;
+  }
+  .scope-of-work__item .scope-of-work__item-content li p:before {
+    left: -20%;
+    top: 20%;
+  }
+}

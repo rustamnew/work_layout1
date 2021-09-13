@@ -82,3 +82,9 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 320px) {
+  .promo__form .input {
+    width: 80%;
+  }
+}

@@ -31,8 +31,7 @@
 .upload__button {
   background: rgba(252, 179, 42, 0.75);
   border-radius: 50%;
-  width: 130px;
-  height: 130px;
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;

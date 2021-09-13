@@ -40,13 +40,17 @@
 
 @media (max-width: 768px) {
   .projects__list {
+    grid-gap: unset;
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
 
   .projects__item {
     height: 170px;
+    margin-bottom: 20px;
+  }
+  .projects__item:last-child {
+    margin-bottom: 0;
   }
   .projects__item::after {
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.2) 31.2%, rgba(17, 17, 17, 0.9) 100%);

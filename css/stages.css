@@ -71,4 +71,11 @@ position: relative;
   .stages__item-icon {
     margin-right: 20px;
   }
+  
+}
+
+@media (max-width: 320px) {
+  .stages__list {
+    padding: 0 12px;
+  }
 }
