@@ -113,7 +113,6 @@
 
 .for-whom__form {
   display: flex;
-  justify-content: center;
 }
 .for-whom__form input{
   margin-right: 30px;

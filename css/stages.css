@@ -1,8 +1,10 @@
+.stages {
+  background-color: #FAFAFA;
+}
+
 .stages__list {
   display: flex;
 }
-
-
 
 .stages__item {
 display: flex;

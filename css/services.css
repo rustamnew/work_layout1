@@ -45,9 +45,15 @@
 }
 
 .slider {
-  width: 90%;
+  width: 100%;
 }
 
 .slider__item {
   padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  .slider {
+    width: 90%;
+  }
 }

@@ -53,14 +53,14 @@
 }
 
 .promo__form .input {
-  width: 90%;
+  width: 85%;
   margin-bottom: 30px;
 }
 .promo__form .input:last-child {
   margin-bottom: 0;
 }
-.promo__form .input.text {
-  
+.promo__form .input.text::-webkit-input-placeholder {
+  text-align: center;
 }
 
 @media (max-width: 768px) {

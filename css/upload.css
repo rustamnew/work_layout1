@@ -35,9 +35,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
+}
+
+.upload__button input {
+  display: none;
 }
 
 @media (max-width: 768px) {
+  .upload {
+    min-height: 500px;
+  }
   .upload__content {
     left: 0;
     justify-content: space-evenly;  
