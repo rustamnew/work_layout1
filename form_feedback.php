@@ -51,14 +51,15 @@ try {
     if ($mail->send()) {$result = "success";} 
     else {$result = "error";}
     
-
+    header("Location: https://electroexpress.ru");
 } catch (Exception $e) {
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+    print_r($status);
 }
 
 
-header("Location: https://electroexpress.ru");
+
 
 
 

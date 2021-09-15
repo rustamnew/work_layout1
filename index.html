@@ -11,7 +11,14 @@
     
     <link rel="stylesheet" href="./main.css">
 
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fcb32a">
+    <meta name="msapplication-TileColor" content="#fcb32a">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
@@ -29,6 +36,14 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/85142614" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
+
+    <!--Код чата-->
+    <script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b18704300/crm/site_button/loader_3_ck0e8a.js');
+    </script>
 
     <!-- Phone Mask-->
     <script src="https://unpkg.com/imask"></script>
@@ -107,7 +122,7 @@
                 <div class="banner__promo">
                     <h2><font color="#FCB32A" >Акция</font> до конца сентября!</h2>
                     <p>Устройство защиты от скачков напряжения с установкой в подарок!</p>
-                    <form action="form.php" class="promo__form" method="POST">
+                    <form action="form_feedback.php" class="promo__form" method="POST">
                         <input type="text" name="name" class="input text" placeholder="Ваше имя" required>
                         <input type="text" name="phone" class="input text" placeholder="Номер телефона" required>
                         <input type="submit" class="input submit yellow" value="Защитить мою технику">
@@ -386,10 +401,17 @@
                     <p>Пришлите нам файл или фотографию и мы перезвоним вам с выгодным предложением</p>
                 </div>
 
-                <label for="upload-file1" class="upload__button">
-                    <img src="./images/upload/Vector.svg" alt="icon">
-                    <input type="file" id="upload-file1" />
-                </label>
+                
+                    <form action="form_file.php" method="POST" enctype="multipart/form-data" id="form-file" class="upload-file__form">
+                        <input type="text" class="input text" name="name" placeholder="Ваше имя" required>
+                        <input type="text" class="input text" name="phone" placeholder="Ваш телефон" required>
+
+                        <label for="upload-file1" class="upload__button">
+                            <img src="./images/upload/Vector.svg" alt="icon">
+                            <input type="file" name="upload-file1[]" multiple id="upload-file1" />
+                        </label>
+                    </form>
+                
             </div>
         </section>
 
@@ -560,7 +582,7 @@
     </div>
 
     <div class="summoned-form" id="summoned-form">
-        <form action="form.php" class="summoned-form__form" method="POST">
+        <form action="form_feedback.php" class="summoned-form__form" method="POST">
             <a href="#" id="summoned-form-close">X</a>
             <input type="text" name="name" class="input text" placeholder="Ваше имя" required>
             <input type="text" name="phone" class="input text input-phone" placeholder="Номер телефона" required>

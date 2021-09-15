@@ -92,3 +92,15 @@ whatsappFormSubmit.addEventListener('click', (e) => {
         document.location.href = link;
     }
 })
+
+
+//Форма отправки файла
+let fileInput = document.querySelector("#upload-file1");
+let fileForm = document.querySelector('#form-file')
+fileInput.addEventListener("change", (e) => {
+    e.preventDefault()
+    console.log(fileInput.value)
+    console.log(fileForm)
+    fileForm.submit()
+});
+
