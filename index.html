@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ЭлектроЭкспресс</title>
+    <title>ЭлектроЭкспресс - все виды электромонтажных работ</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./slider/slick.css">
     <link rel="stylesheet" href="./slider/slick-theme.css">
-    
+
     <link rel="stylesheet" href="./main.css">
 
-
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon/favicon-16x16.png">
@@ -19,36 +22,43 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fcb32a">
     <meta name="msapplication-TileColor" content="#fcb32a">
     <meta name="theme-color" content="#ffffff">
+    <!-- /Favicon -->
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
         ym(85142614, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
         });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/85142614" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/85142614" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
     <!-- /Yandex.Metrika counter -->
 
-
-    <!--Код чата-->
+    <!-- Код чата Bitrix24-->
     <script>
-        (function(w,d,u){
-                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
-                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-        })(window,document,'https://cdn-ru.bitrix24.ru/b18704300/crm/site_button/loader_3_ck0e8a.js');
+        (function (w, d, u) {
+            var s = d.createElement('script'); s.async = true; s.src = u + '?' + (Date.now() / 60000 | 0);
+            var h = d.getElementsByTagName('script')[0]; h.parentNode.insertBefore(s, h);
+        })(window, document, 'https://cdn-ru.bitrix24.ru/b18704300/crm/site_button/loader_3_ck0e8a.js');
     </script>
+    <!-- /Код чата Bitrix24-->
 
     <!-- Phone Mask-->
     <script src="https://unpkg.com/imask"></script>
-    
+    <!-- /Phone Mask-->
+
 </head>
+
 <body>
     <div class="wrapper">
         <section class="topbar">
@@ -67,7 +77,9 @@
                             <img src="./images/icons/colored/free-icon-email-1034138 1.svg" alt="icon">
                         </div>
 
-                        <p>info@electroexpress.ru</p>
+                        <p>
+                            <a href="mailto:info@electroexpress.ru">info@electroexpress.ru</a>
+                        </p>
                     </li>
 
                     <li class="topbar__item">
@@ -78,7 +90,7 @@
                         <p>г. Казань, ул. Габишева, д. 25</p>
                     </li>
                 </ul>
-               
+
             </div>
         </section>
 
@@ -91,11 +103,11 @@
                 </div>
                 <div class="header__col">
                     <div class="header__phone">
-                        <a href="tel:+7 9600 52-30-51">+7 9600 52-30-51</a>
+                        <a href="tel:+79872980427">+7 987 298-04-27</a>
                     </div>
                 </div>
                 <div class="header__col">
-                    <a href="#" class="button blue summon-form-button">Заказать звонок</a>
+                    <a href="#" class="button blue summon-form-button" id="form-summoner-topbar">Заказать звонок</a>
                 </div>
                 <div class="header__col mobile">
                     <div class="header__mobile-menu__button" id="mobile-menu-open">
@@ -110,21 +122,24 @@
         <section class="banner">
             <div class="container">
                 <div class="banner__content">
-                    <h1>Электромонтаж под ключ с гарантией по договору</h1>
-                    <p>в Казани и за городом</p>
+                    <h1>Электромонтаж под ключ с гарантией по договору в Казани и за городом</h1>
+                    <p>Экономим на материалах до 30%</p>
                     <ul>
                         <li>• опытные мастера из РФ</li>
                         <li>• соблюдаем ПУЭ и СНиП</li>
                         <li>• без посредников</li>
                     </ul>
-                    <a href="#" class="button blue summon-form-button">Заказать звонок</a>
+                    <a href="#" class="button blue summon-form-button" id="form-summoner-banner">Заказать звонок</a>
                 </div>
                 <div class="banner__promo">
-                    <h2><font color="#FCB32A" >Акция</font> до конца сентября!</h2>
+                    <h2>
+                        <font color="#FCB32A">Акция</font> до конца сентября!
+                    </h2>
                     <p>Устройство защиты от скачков напряжения с установкой в подарок!</p>
                     <form action="form_feedback.php" class="promo__form" method="POST">
                         <input type="text" name="name" class="input text" placeholder="Ваше имя" required>
-                        <input type="text" name="phone" class="input text" placeholder="Номер телефона" required>
+                        <input type="text" name="phone" class="input text input-phone" placeholder="Номер телефона"
+                            required>
                         <input type="submit" class="input submit yellow" value="Защитить мою технику">
                     </form>
                 </div>
@@ -146,7 +161,8 @@
                     <li class="advantages__item">
                         <div class="advantages__item-info">
                             <h5>Договор и чек</h5>
-                            <p>Составляем договор с перечнем работ, материалов, гарантией и обязательствами по срокам</p>
+                            <p>Составляем договор с перечнем работ, материалов, гарантией и обязательствами по срокам
+                            </p>
                         </div>
                         <div class="advantages__item-icon">
                             <img src="./images/icons/colored/free-icon-contract-1738453 1.svg" alt="icon">
@@ -202,7 +218,8 @@
                     <li class="advantages__item">
                         <div class="advantages__item-info">
                             <h5>Оплата удобным способом</h5>
-                            <p>Наличные или безналичные, физ. и юр.лица, рассрочка - подберём для вас самый удобный способ оплаты</p>
+                            <p>Наличные или безналичные, физ. и юр.лица, рассрочка - подберём для вас самый удобный
+                                способ оплаты</p>
                         </div>
                         <div class="advantages__item-icon">
                             <img src="./images/icons/colored/free-icon-business-and-finance-1727691 1.svg" alt="icon">
@@ -224,7 +241,7 @@
 
             <div class="container">
                 <div class="services__slider slider" id="slider1">
-                    
+
                     <div class=" slider__item">
                         <div class="services__item">
                             <div class="services__item-image">
@@ -239,8 +256,9 @@
                                     <li>• установка розеток и выключателей</li>
                                     <li>• сборка и монтаж щита</li>
                                 </ul>
-        
-                                <a href="#" class="button yellow">Рассчитать проект</a>
+
+                                <a href="#" class="button yellow summon-form-button"
+                                    id="form-summoner-services">Рассчитать проект</a>
                             </div>
                         </div>
                     </div>
@@ -258,8 +276,9 @@
                                     <li>• установка розеток и выключателей</li>
                                     <li>• сборка и монтаж щита</li>
                                 </ul>
-        
-                                <a href="#" class="button yellow">Рассчитать проект</a>
+
+                                <a href="#" class="button yellow summon-form-button"
+                                    id="form-summoner-services">Рассчитать проект</a>
                             </div>
                         </div>
                     </div>
@@ -277,8 +296,9 @@
                                     <li>• установка розеток и выключателей</li>
                                     <li>• сборка и монтаж щита</li>
                                 </ul>
-        
-                                <a href="#" class="button yellow">Рассчитать проект</a>
+
+                                <a href="#" class="button yellow summon-form-button"
+                                    id="form-summoner-services">Рассчитать проект</a>
                             </div>
                         </div>
                     </div>
@@ -296,12 +316,13 @@
                                     <li>• установка розеток и выключателей</li>
                                     <li>• сборка и монтаж щита</li>
                                 </ul>
-        
-                                <a href="#" class="button yellow">Рассчитать проект</a>
+
+                                <a href="#" class="button yellow summon-form-button"
+                                    id="form-summoner-services">Рассчитать проект</a>
                             </div>
                         </div>
-                    </div>  
-                    
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -322,7 +343,7 @@
                         </div>
 
                         <ul>
-                            <li> 
+                            <li>
                                 <p>В домовом чате новостройки жалуются на плохое качество проводки</p>
                             </li>
                             <li>
@@ -340,8 +361,10 @@
                             </li>
                         </ul>
                         <div class="for-whom__form">
-                            <input type="text" class="input text" id="for-whom__form-input" placeholder="Ваше имя" required>
-                            <input type="submit" class="input submit yellow" id="for-whom__form-submit" value="Оставить заявку в WhatsApp">
+                            <input type="text" class="input text" id="for-whom__form-input" placeholder="Ваше имя"
+                                required>
+                            <input type="submit" class="input submit yellow" id="for-whom__form-submit"
+                                value="Оставить заявку в WhatsApp">
                         </div>
                     </div>
                 </div>
@@ -386,7 +409,8 @@
                     </li>
                 </ul>
 
-                <a href="#" class="button yellow summon-form-button">Рассчитать мой объект</a>
+                <a href="#" class="button yellow summon-form-button" id="form-summoner-projects">Рассчитать мой
+                    объект</a>
             </div>
         </section>
 
@@ -401,17 +425,18 @@
                     <p>Пришлите нам файл или фотографию и мы перезвоним вам с выгодным предложением</p>
                 </div>
 
-                
-                    <form action="form_file.php" method="POST" enctype="multipart/form-data" id="form-file" class="upload-file__form">
-                        <input type="text" class="input text" name="name" placeholder="Ваше имя" required>
-                        <input type="text" class="input text" name="phone" placeholder="Ваш телефон" required>
 
-                        <label for="upload-file1" class="upload__button">
-                            <img src="./images/upload/Vector.svg" alt="icon">
-                            <input type="file" name="upload-file1[]" multiple id="upload-file1" />
-                        </label>
-                    </form>
-                
+                <form action="form_file.php" method="POST" enctype="multipart/form-data" id="form-file"
+                    class="upload-file__form">
+                    <input type="text" class="input text" name="name" placeholder="Ваше имя" required>
+                    <input type="text" class="input text" name="phone" placeholder="Ваш телефон" required>
+
+                    <label for="upload-file1" class="upload__button">
+                        <img src="./images/upload/Vector.svg" alt="icon">
+                        <input type="file" name="upload-file1[]" multiple id="upload-file1" />
+                    </label>
+                </form>
+
             </div>
         </section>
 
@@ -429,35 +454,35 @@
                 <ul class="stages__list">
                     <li class="stages__item">
                         <div class="stages__item-icon">
-                            <img src="./images/icons/colored/free-icon-floor-plan-1540090 1.svg" alt="icon"> 
+                            <img src="./images/icons/colored/free-icon-floor-plan-1540090 1.svg" alt="icon">
                         </div>
                         <p>Обсуждаем и согласовываем проект</p>
                     </li>
 
                     <li class="stages__item">
                         <div class="stages__item-icon">
-                            <img src="./images/icons/colored/free-icon-calculator-994407 1.svg" alt="icon"> 
+                            <img src="./images/icons/colored/free-icon-calculator-994407 1.svg" alt="icon">
                         </div>
                         <p>Производим расчёт сметы</p>
                     </li>
 
                     <li class="stages__item">
                         <div class="stages__item-icon">
-                            <img src="./images/icons/colored/free-icon-shake-hands-2618136 1.svg" alt="icon"> 
+                            <img src="./images/icons/colored/free-icon-shake-hands-2618136 1.svg" alt="icon">
                         </div>
                         <p>Составляем и заключаем договор</p>
                     </li>
 
                     <li class="stages__item">
                         <div class="stages__item-icon">
-                            <img src="./images/icons/colored/free-icon-stripping-wires-2162544 1.svg" alt="icon"> 
+                            <img src="./images/icons/colored/free-icon-stripping-wires-2162544 1.svg" alt="icon">
                         </div>
                         <p>Производим электромонтаж согласно проекту</p>
                     </li>
 
                     <li class="stages__item">
                         <div class="stages__item-icon">
-                            <img src="./images/icons/colored/free-icon-asset-5115833 1.svg" alt="icon"> 
+                            <img src="./images/icons/colored/free-icon-asset-5115833 1.svg" alt="icon">
                         </div>
                         <p>Сдаем объект, обучаем заказчика, подписываем акт</p>
                     </li>
@@ -468,7 +493,7 @@
         <section class="scope-of-work">
             <a name="scope-of-work"></a>
             <div class="container">
-                
+
                 <div class="scope-of-work__item top">
                     <div class="scope-of-work__item-image">
                         <img src="./images/scope-of-work/image.png" alt="image">
@@ -558,7 +583,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
         </section>
     </div>
@@ -567,23 +592,25 @@
         <a href="#" id="mobile-menu-close">X</a>
 
         <a href="#advantages" class="mobile-menu__item">Преимущества</a>
-    
+
         <a href="#services" class="mobile-menu__item">Услуги</a>
-    
+
         <a href="#for-whom" class="mobile-menu__item">Оставить заявку</a>
-    
+
         <a href="#projects" class="mobile-menu__item">Проекты</a>
-    
+
         <a href="#upload" class="mobile-menu__item">Прислать проект</a>
-    
+
         <a href="#stages" class="mobile-menu__item">Этапы работ</a>
-    
+
         <a href="#scope-of-work" class="mobile-menu__item">Информация</a>
     </div>
 
-    <div class="summoned-form" id="summoned-form">
-        <form action="form_feedback.php" class="summoned-form__form" method="POST">
+    <div class="summoned-form" id="summoned-form">       
+        <form class="summoned-form__form" id="summoned-form__form">
+            <div id="response"></div>
             <a href="#" id="summoned-form-close">X</a>
+            <input type="hidden" name="form-summoner" id="form-summoner" value="">
             <input type="text" name="name" class="input text" placeholder="Ваше имя" required>
             <input type="text" name="phone" class="input text input-phone" placeholder="Номер телефона" required>
             <input type="submit" class="input submit yellow" value="Отправить">
@@ -594,4 +621,5 @@
     <script src="./slider/slick.js"></script>
     <script src="./script.js"></script>
 </body>
+
 </html>

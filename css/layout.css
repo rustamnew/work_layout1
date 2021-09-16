@@ -121,6 +121,7 @@ section {
     width: 40%;
     height: 40%;
     max-width: 500px;
+    min-height: 350px;
 }
 #summoned-form-close {
     position: fixed;
@@ -136,9 +137,9 @@ section {
 .summoned-form__form input:last-child {
     margin-bottom: 0;
 }
-.summoned-form__form input.submit {
+/*.summoned-form__form input.submit {
     width: 70%;
-}
+}*/
 
 @media (max-width: 768px) {
     html {  
