@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="./slider/slick.css">
     <link rel="stylesheet" href="./slider/slick-theme.css">
 
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fcb32a">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#fcb32a">
     <meta name="msapplication-TileColor" content="#fcb32a">
     <meta name="theme-color" content="#ffffff">
     <!-- /Favicon -->
@@ -58,7 +58,7 @@
     <!-- /Phone Mask-->
 
     <!-- Fancybox-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <!-- /Fancybox-->
 </head>
 
@@ -69,7 +69,7 @@
                 <ul class="topbar__list">
                     <li class="topbar__item">
                         <div class="topbar__item-icon">
-                            <img src="./images/icons/colored/free-icon-time-call-1034144 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-time-call-1034144 1.svg" alt="icon">
                         </div>
 
                         <p>Ежедневно с 8:00 до 21:00</p>
@@ -77,7 +77,7 @@
 
                     <li class="topbar__item">
                         <div class="topbar__item-icon">
-                            <img src="./images/icons/colored/free-icon-email-1034138 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-email-1034138 1.svg" alt="icon">
                         </div>
 
                         <p>
@@ -87,10 +87,10 @@
 
                     <li class="topbar__item">
                         <div class="topbar__item-icon">
-                            <img src="./images/icons/colored/free-icon-location-1034129 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-location-1034129 1.svg" alt="icon">
                         </div>
 
-                        <p>г. Казань, ул. Габишева, д. 25</p>
+                        <p>г. Казань</p>
                     </li>
                 </ul>
 
@@ -101,7 +101,7 @@
             <div class="container">
                 <div class="header__col logo">
                     <a href="index.html">
-                        <img src="./images/logo.png" alt="logo">
+                        <img src="/img/logo.png" alt="logo">
                     </a>
                 </div>
                 <div class="header__col">
@@ -115,7 +115,7 @@
                 <div class="header__col mobile">
                     <div class="header__mobile-menu__button" id="mobile-menu-open">
                         <a href="#">
-                            <img src="./images/icons/black-outline/menu.svg" alt="icon">
+                            <img src="/img/icons/black-outline/menu.svg" alt="icon">
                         </a>
                     </div>
                 </div>
@@ -139,7 +139,8 @@
                         <font color="#FCB32A">Акция</font> до конца сентября!
                     </h2>
                     <p>Устройство защиты от скачков напряжения с установкой в подарок!</p>
-                    <form action="form_feedback.php" class="promo__form" method="POST">
+                    <form class="promo__form" id="promo__form">
+                        <input type="hidden" name="form-banner" id="form-banner" value="form-banner-promo">
                         <input type="text" name="name" class="input text" placeholder="Ваше имя" required>
                         <input type="text" name="phone" class="input text input-phone" placeholder="Номер телефона"
                             required>
@@ -153,7 +154,7 @@
             <a name="advantages"></a>
             <div class="section__title">
                 <div class="section__title-icon">
-                    <img src="./images/icons/colored/Vector.svg" alt="icon">
+                    <img src="/img/icons/colored/Vector.svg" alt="icon">
                 </div>
                 <h2>Почему стоит выбрать нашу компанию</h2>
                 <p>6 основных причин, которые выделяют наши клиенты</p>
@@ -168,7 +169,7 @@
                             </p>
                         </div>
                         <div class="advantages__item-icon">
-                            <img src="./images/icons/colored/free-icon-contract-1738453 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-contract-1738453 1.svg" alt="icon">
                         </div>
                     </li>
 
@@ -178,7 +179,7 @@
                             <p>Даём гарантию на работы и на материалы до 3 лет по договору</p>
                         </div>
                         <div class="advantages__item-icon">
-                            <img src="./images/icons/colored/guarantee 1.svg" alt="icon">
+                            <img src="/img/icons/colored/guarantee 1.svg" alt="icon">
                         </div>
                     </li>
 
@@ -188,13 +189,13 @@
                             <p>Составляем прозрачную честную смету и фиксируем ее в договоре </p>
                         </div>
                         <div class="advantages__item-icon">
-                            <img src="./images/icons/colored/free-icon-calculator-2432568 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-calculator-2432568 1.svg" alt="icon">
                         </div>
                     </li>
                 </ul>
 
                 <div class="advantages__image">
-                    <img src="./images/advantages/electrician.png" alt="image">
+                    <img src="/img/advantages/electrician.png" alt="image">
                 </div>
 
                 <ul class="advantages__col right">
@@ -204,7 +205,7 @@
                             <p>Благодаря большим объемам закупок, поставщики предоставляют нам скидки</p>
                         </div>
                         <div class="advantages__item-icon">
-                            <img src="./images/icons/colored/free-icon-discount-181954 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-discount-181954 1.svg" alt="icon">
                         </div>
                     </li>
 
@@ -214,7 +215,7 @@
                             <p>Снимаем с вас все заботы по покупке материалов и доставке их на объект</p>
                         </div>
                         <div class="advantages__item-icon">
-                            <img src="./images/icons/colored/free-icon-delivery-truck-962872 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-delivery-truck-962872 1.svg" alt="icon">
                         </div>
                     </li>
 
@@ -225,7 +226,7 @@
                                 способ оплаты</p>
                         </div>
                         <div class="advantages__item-icon">
-                            <img src="./images/icons/colored/free-icon-business-and-finance-1727691 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-business-and-finance-1727691 1.svg" alt="icon">
                         </div>
                     </li>
                 </ul>
@@ -236,7 +237,7 @@
             <a name="services"></a>
             <div class="section__title">
                 <div class="section__title-icon">
-                    <img src="./images/icons/colored/Vector.svg" alt="icon">
+                    <img src="/img/icons/colored/Vector.svg" alt="icon">
                 </div>
                 <h2>Виды работ</h2>
                 <p>Выполняем объекты любой сложности</p>
@@ -248,7 +249,7 @@
                     <div class=" slider__item">
                         <div class="services__item">
                             <div class="services__item-image">
-                                <img src="./images/services/1.png" alt="image">
+                                <img src="/img/services/1.png" alt="image">
                             </div>
                             <div class="services__item-info">
                                 <h3>Электрика под ключ в однокомнатной квартире новостройки</h3>
@@ -268,7 +269,7 @@
                     <div class=" slider__item">
                         <div class="services__item">
                             <div class="services__item-image">
-                                <img src="./images/services/2.png" alt="image">
+                                <img src="/img/services/2.png" alt="image">
                             </div>
                             <div class="services__item-info">
                                 <h3>Электрика под ключ в однокомнатной квартире новостройки</h3>
@@ -288,7 +289,7 @@
                     <div class=" slider__item">
                         <div class="services__item">
                             <div class="services__item-image">
-                                <img src="./images/services/3.png" alt="image">
+                                <img src="/img/services/3.png" alt="image">
                             </div>
                             <div class="services__item-info">
                                 <h3>Электрика под ключ в однокомнатной квартире новостройки</h3>
@@ -308,7 +309,7 @@
                     <div class=" slider__item">
                         <div class="services__item">
                             <div class="services__item-image">
-                                <img src="./images/services/1.png" alt="image">
+                                <img src="/img/services/1.png" alt="image">
                             </div>
                             <div class="services__item-info">
                                 <h3>Электрика под ключ в четырёхкомнатной квартире новостройки</h3>
@@ -335,7 +336,7 @@
             <div class="container">
                 <div class="for-whom__content">
                     <div class="for-whom__content-image">
-                        <img src="./images/for-whom/photo.png" alt="image">
+                        <img src="/img/for-whom/photo.png" alt="image">
                     </div>
 
                     <div class="for-whom__content-main">
@@ -378,7 +379,7 @@
             <a name="projects"></a>
             <div class="section__title">
                 <div class="section__title-icon">
-                    <img src="./images/icons/colored/Vector.svg" alt="icon">
+                    <img src="/img/icons/colored/Vector.svg" alt="icon">
                 </div>
                 <h2>Все ваши задачи по электрике можно легко решить</h2>
                 <p>Посмотрите наши недавние объекты</p>
@@ -386,28 +387,34 @@
 
             <div class="container">
                 <ul class="projects__list">
-                    <li class="projects__item" style="background-image: url(./images/projects/1.png);" data-fancybox="gallery" data-src="./images/projects/1.png">
+                    <li class="projects__item" style="background-image: url(/img/projects/1.png);"
+                        data-fancybox="gallery" data-src="/img/projects/1.png">
                         <h3><a href="#">Частный дом в котеджном комплексе “Аэросити”</a></h3>
                     </li>
 
-                    <li class="projects__item" style="background-image: url(./images/projects/2.png);" data-fancybox="gallery" data-src="./images/projects/2.png">
+                    <li class="projects__item" style="background-image: url(/img/projects/2.png);"
+                        data-fancybox="gallery" data-src="/img/projects/2.png">
                         <h3><a href="#">3-комнатная квартира в жилом комплексе “21 ВЕК”</a></h3>
                     </li>
 
-                    <li class="projects__item" style="background-image: url(./images/projects/3.png);" data-fancybox="gallery" data-src="./images/projects/3.png">
+                    <li class="projects__item" style="background-image: url(/img/projects/3.png);"
+                        data-fancybox="gallery" data-src="/img/projects/3.png">
                         <h3><a href="#">1-комнатная квартира (ленинградка на Р.Зорге, 111)</a></h3>
                     </li>
 
 
-                    <li class="projects__item" style="background-image: url(./images/projects/4.png);" data-fancybox="gallery" data-src="./images/projects/4.png">
+                    <li class="projects__item" style="background-image: url(/img/projects/4.png);"
+                        data-fancybox="gallery" data-src="/img/projects/4.png">
                         <h3><a href="#">2-этажный гостевой дом с баней (Тетеево)</a></h3>
                     </li>
 
-                    <li class="projects__item" style="background-image: url(./images/projects/5.png);" data-fancybox="gallery" data-src="./images/projects/5.png">
+                    <li class="projects__item" style="background-image: url(/img/projects/5.png);"
+                        data-fancybox="gallery" data-src="/img/projects/5.png">
                         <h3><a href="#">1-комнатная квартира (хрущевка на Искра, 48)</a></h3>
                     </li>
 
-                    <li class="projects__item" style="background-image: url(./images/projects/6.png);" data-fancybox="gallery" data-src="./images/projects/6.png">
+                    <li class="projects__item" style="background-image: url(/img/projects/6.png);"
+                        data-fancybox="gallery" data-src="/img/projects/6.png">
                         <h3><a href="#">Магазин мусульманской одежды (Парижской Коммуны)</a></h3>
                     </li>
                 </ul>
@@ -422,24 +429,45 @@
             <div class="upload__content">
                 <div class="section__title">
                     <div class="section__title-icon">
-                        <img src="./images/icons/colored/Vector.svg" alt="icon">
+                        <img src="/img/icons/colored/Vector.svg" alt="icon">
                     </div>
                     <h2>У вас уже есть смета или проект?</h2>
                     <p>Пришлите нам файл или фотографию и мы перезвоним вам с выгодным предложением</p>
                 </div>
 
 
-                <form action="form_file.php" method="POST" enctype="multipart/form-data" id="form-file"
-                    class="upload-file__form">
+                <form action="php/form_file.php" method="POST" enctype="multipart/form-data" id="form-file" class="upload-file__form">
                     <input type="text" class="input text" name="name" placeholder="Ваше имя" required>
+
                     <input type="text" class="input text" name="phone" placeholder="Ваш телефон" required>
 
-                    <label for="upload-file1" class="upload__button">
-                        <img src="./images/upload/Vector.svg" alt="icon">
-                        <input type="file" name="upload-file1[]" multiple id="upload-file1" />
+                    <label for="upload-file1" class="label-for-file">
+                        <input type="" class="input text" id="input-for-file" placeholder="Прикрепить файл">
+                        <input type="file" class="input file" name="upload-file1[]" multiple id="upload-file1" hidden/>
                     </label>
+
+                    <label for="upload-file1-submit" class="upload__button">
+                        <img src="./img/icons/colored/send.svg" alt="icon">
+                        <input type="submit" name="upload-file1-submit" id="upload-file1-submit" hidden>
+                    </label>
+                    
                 </form>
 
+
+                <!--
+                <form class="upload-file__form" id="upload-file__form">
+                    <div id="result">
+                        
+                    </div>
+                    <input type="text" class="input text" name="name" placeholder="Ваше имя" required>
+                    <input type="text" class="input text" name="phone" placeholder="Ваш телефон" required>
+                    <label class="upload__button">
+                        <img src="/img/upload/Vector.svg" alt="icon">
+                        <input type="file" name="file" required />
+                    </label>
+                    <input type="submit" name="submit" id="submit" class="input submit yellow" value="Отправить">
+                </form>
+                -->
             </div>
         </section>
 
@@ -447,7 +475,7 @@
             <a name="stages"></a>
             <div class="section__title">
                 <div class="section__title-icon">
-                    <img src="./images/icons/colored/Vector.svg" alt="icon">
+                    <img src="/img/icons/colored/Vector.svg" alt="icon">
                 </div>
                 <h2>Этапы работ</h2>
                 <p>У нас прозрачная и отработанная схема взаимодействия с клиентами</p>
@@ -457,35 +485,35 @@
                 <ul class="stages__list">
                     <li class="stages__item">
                         <div class="stages__item-icon">
-                            <img src="./images/icons/colored/free-icon-floor-plan-1540090 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-floor-plan-1540090 1.svg" alt="icon">
                         </div>
                         <p>Обсуждаем и согласовываем проект</p>
                     </li>
 
                     <li class="stages__item">
                         <div class="stages__item-icon">
-                            <img src="./images/icons/colored/free-icon-calculator-994407 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-calculator-994407 1.svg" alt="icon">
                         </div>
                         <p>Производим расчёт сметы</p>
                     </li>
 
                     <li class="stages__item">
                         <div class="stages__item-icon">
-                            <img src="./images/icons/colored/free-icon-shake-hands-2618136 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-shake-hands-2618136 1.svg" alt="icon">
                         </div>
                         <p>Составляем и заключаем договор</p>
                     </li>
 
                     <li class="stages__item">
                         <div class="stages__item-icon">
-                            <img src="./images/icons/colored/free-icon-stripping-wires-2162544 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-stripping-wires-2162544 1.svg" alt="icon">
                         </div>
                         <p>Производим электромонтаж согласно проекту</p>
                     </li>
 
                     <li class="stages__item">
                         <div class="stages__item-icon">
-                            <img src="./images/icons/colored/free-icon-asset-5115833 1.svg" alt="icon">
+                            <img src="/img/icons/colored/free-icon-asset-5115833 1.svg" alt="icon">
                         </div>
                         <p>Сдаем объект, обучаем заказчика, подписываем акт</p>
                     </li>
@@ -499,7 +527,7 @@
 
                 <div class="scope-of-work__item top">
                     <div class="scope-of-work__item-image">
-                        <img src="./images/scope-of-work/image.png" alt="image">
+                        <img src="/img/scope-of-work/image.png" alt="image">
                     </div>
                     <div class="scope-of-work__item-content">
                         <h2>Что входит в состав работ под ключ</h2>
@@ -547,7 +575,7 @@
 
                 <div class="scope-of-work__item bottom">
                     <div class="scope-of-work__item-image">
-                        <img src="./images/scope-of-work/image (1).png" alt="image">
+                        <img src="/img/scope-of-work/image (1).png" alt="image">
                     </div>
                     <div class="scope-of-work__item-content">
                         <h2>Что вы получите по окончанию работ</h2>
@@ -609,10 +637,10 @@
         <a href="#scope-of-work" class="mobile-menu__item">Информация</a>
     </div>
 
-    <div class="summoned-form" id="summoned-form">       
+    <div class="summoned-form" id="summoned-form">
         <form class="summoned-form__form" id="summoned-form__form">
             <div id="response"></div>
-            <a href="#" id="summoned-form-close">X</a>
+            <a href="#" id="summoned-form-close">x</a>
             <input type="hidden" name="form-summoner" id="form-summoner" value="">
             <input type="text" name="name" class="input text" placeholder="Ваше имя" required>
             <input type="text" name="phone" class="input text input-phone" placeholder="Номер телефона" required>
@@ -626,7 +654,7 @@
 
     <script src="./slider/jquery-3.6.0.min.js"></script>
     <script src="./slider/slick.js"></script>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

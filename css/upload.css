@@ -1,5 +1,5 @@
 .upload {
-  background-image: url('../images/upload/background.png');
+  background-image: url('../img/upload/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center left;
@@ -16,6 +16,13 @@
     align-items: center;
 }
 
+.upload-file__form input {
+  margin-bottom: 30px;
+}
+.upload-file__form .label-for-file input {
+  margin-bottom: 0;
+}
+
 .upload__content {
   background: rgba(31, 31, 31, 0.8);
   position: absolute;
@@ -23,7 +30,7 @@
   right: 0;
   bottom: 0;
   left: 50%;
-  padding: 12% 2%;
+  padding: 7% 2%;
   display: flex;
   flex-direction: column;
   align-items: center;

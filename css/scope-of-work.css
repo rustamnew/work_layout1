@@ -1,6 +1,6 @@
 .scope-of-work {
   padding: 170px 0;
-  background-image: url('../images/scope-of-work/background.png');
+  background-image: url('../img/scope-of-work/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -71,11 +71,11 @@
 
 
 .scope-of-work__item.top .scope-of-work__item-content li p:before{
-  background: url('../images/icons/colored/checked-blue.svg');
+  background: url('../img/icons/colored/checked-blue.svg');
   background-repeat: no-repeat;
 }
 .scope-of-work__item.bottom .scope-of-work__item-content li p:before{
-  background: url('../images/icons/colored/checked-yellow.svg');
+  background: url('../img/icons/colored/checked-yellow.svg');
   background-repeat: no-repeat;
 }
 

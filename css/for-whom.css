@@ -1,6 +1,6 @@
 .for-whom {
   height: 750px;
-  background-image: url('../images/for-whom/background.png');
+  background-image: url('../img/for-whom/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -49,7 +49,7 @@
   width: 18px;
   height: 32px;
   background-size: cover;
-  background: url('../images/icons/colored/Vector.svg');
+  background: url('../img/icons/colored/Vector.svg');
   background-repeat: no-repeat no-repeat;
 
   position: absolute;
@@ -102,7 +102,7 @@
   width: 24px;
   height: 24px;
   background-size: cover;
-  background: url('../images/icons/colored/check-box.svg');
+  background: url('../img/icons/colored/check-box.svg');
   background-repeat: no-repeat no-repeat;
 
   position: absolute;

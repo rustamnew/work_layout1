@@ -88,8 +88,7 @@
 }
 .slick-prev:before
 {
-    font-size: 50px;
-    content: '‹';
+    content: '←';
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -107,8 +106,7 @@
 }
 .slick-next:before
 {
-    font-size: 50px;
-    content: '›';
+    content: '→';
 }
 [dir='rtl'] .slick-next:before
 {
