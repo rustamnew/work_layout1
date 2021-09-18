@@ -58,9 +58,11 @@
 
 @media (max-width: 768px) {
   .upload {
+    padding: 0;
     min-height: 500px;
   }
   .upload__content {
+    position: unset;
     left: 0;
     justify-content: space-evenly;  
   }
